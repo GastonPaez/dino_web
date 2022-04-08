@@ -1,3 +1,9 @@
+document.getElementById("icon-bars").addEventListener("click", show_menu);
+function show_menu(){
+    document.querySelector(".navbar").classList.toggle("show_navbar");
+}
+
+
 window.onscroll = function(){
 
     var position = window.pageYOffset || document.documentElement.scrollTop;
