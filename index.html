@@ -26,16 +26,16 @@
                             <a href=""></a>
                         </li>
                         <li>
-                            <a href="">Dinicio</a>
+                            <a href="#home">Dinicio</a>
                         </li>
                         <li>
-                            <a href="">DiNosotros</a>
+                            <a href="#about_us">DiNosotros</a>
                         </li>
                         <li>
-                            <a href="">Galeriactila</a>
+                            <a href="#gallery">Galeriactila</a>
                         </li>
                         <li>
-                            <a href="">Contactosaurio</a>
+                            <a href="#footer">Contactosaurio</a>
                         </li>
                         <li>
                             <a href=""></a>
@@ -51,7 +51,7 @@
     </header>
 
     <main>
-        <div class="cover">
+        <div class="cover" id="home">
             <div class="text__information-cover">
                 <h1>Dinosaurios</h1>
                 <p>Miles de años siendo los dueños del planeta,
@@ -85,9 +85,16 @@
                         <a href="./especies.html">Leer mas</a>                    
                 </div>
             </div>
-        </div>      
+        </div>
+        
+        <section class="about_us" id="about_us">
+            <h1>¿Quienes Somos?</h1>
+            <p>Somos amantes de la naturaleza asombrados por el pasado de la misma, donde habitaban estas maravillosas criaturas de tamaño colosales, de lo que poco sabemos pero dia a dia se conoce mas.</p>
+            <p>Nos interesa compartirles todo nuestro conocimiento de la manera mas asombrosa posible.</p>
+            <p>Esperamos que disfruten de nuestro sitio web y se maravillen con la apasionante informacion e imagenes de estos magnificos Dinosaurios.</p>
+        </section>
 
-        <div class="gallery__title">
+        <div class="gallery__title" id="gallery">
             <h1>Galeria de Fotos</h1>            
         </div>
         <section class="gallery">
@@ -99,9 +106,7 @@
             <a href="#image5"><img src="./assets/gal05.jpg" alt=""></a>
             <a href="#image6"><img src="./assets/gal06.jpg" alt=""></a>
             <a href="#image7"><img src="./assets/gal07.jpg" alt=""></a>
-            <a href="#image8"><img src="./assets/gal08.jpg" alt=""></a>
-            <a href="#image9"><img src="./assets/gal09.jpg" alt=""></a>
-            <a href="#image91"><img src="./assets/gal091.jpg" alt=""></a>
+            <a href="#image8"><img src="./assets/gal08.jpg" alt=""></a>                       
             
         </section>
 
@@ -160,27 +165,47 @@
             ><img src="./assets/gal08.jpg" alt="">
             <a href="#image9" class="arrow"> <i class="fas fa-arrow-circle-right"></i></a>
             <a href="" class="close">X</a>
-        </article>
-
-        <article class="light-box" id="image9" >
-            <a href="#image8" class="arrow"><i class="fas fa-arrow-circle-left"></i></a>
-            <img src="./assets/gal09.jpg" alt="">
-            <a href="#image91" class="arrow"> <i class="fas fa-arrow-circle-right"></i></a>
-            <a href="" class="close">X</a>
-        </article>
-
-        <article class="light-box" id="image91" >
-            <a href="#image9" class="arrow"><i class="fas fa-arrow-circle-left"></i></a>
-            ><img src="./assets/gal911.jpg" alt="">
-            <a href="#image1" class="arrow"> <i class="fas fa-arrow-circle-right"></i></a>
-            <a href="" class="close">X</a>        
-        </article>       
+        </article>           
    
     </main>
+  
 
-    <div class="contact">
-       
-    </div>
+    <footer class="footer" id="footer">
+        <section class="footer__container container">
+
+            <nav class="nav nav--footer">
+                <div class="footer__navbar">
+                    <nav>
+                        <ul>
+                            <li><h2 class="footer__title">Dino Web</h2></li>                           
+                            <li>
+                                <a href="#home">Dinicio</a>
+                            </li>
+                            <li>
+                                <a href="#about_us">DiNosotros</a>
+                            </li>
+                            <li>
+                                <a href="#gallery">Galeriactila</a>
+                            </li>
+                            <li>
+                                <a href="#footer">Contactosaurio</a>
+                            </li>                            
+                        </ul>
+                    </nav>
+                </div>                
+                
+            </nav>
+            <form class="footer__form" action="https://formspree.io/f/xeqnlvrq"
+            method="POST">
+            <div class="footer__inputs">
+                    <h2 class="footer__newsletter">Suscribite:</h2>
+                    <input type="email" placeholder="Email:" class="footer__input" name="email">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>      
+    </footer>
+
     <script src="https://kit.fontawesome.com/bbc35c3c67.js" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 
